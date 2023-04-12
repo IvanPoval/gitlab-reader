@@ -1,0 +1,48 @@
+@import "~bootstrap/scss/variables";
+
+// Options
+$enable-shadows:     true;
+$enable-gradients:   true;
+$min-contrast-ratio:   2;
+
+// colors
+$primary:       $blue;
+$secondary:     #5e7683;
+$highlight:     #d63384;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$accent-1:      #fefefe;
+$accent-2:      #dee2e6;
+$accent-3:      #495057;
+$light:         #f1f3f5;
+$dark:          #343a40;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "highlight":  $highlight,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "accent-1":   $accent-1,
+  "accent-2":   $accent-2,
+  "accent-3":   $accent-3,
+  "light":      $light,
+  "dark":       $dark
+);
+
+$body-bg:       $light;
+$body-color:    $dark;
+
+.table-striped > tbody > tr.table-active:nth-of-type(odd) > * {
+  --bs-table-accent-bg: var(--bs-table-active-bg);
+  color: var(--bs-table-active-color);
+}
+
+.table-hover > tbody > tr:hover > * {
+  --bs-table-accent-bg: var(--bs-table-hover-bg) !important;
+  color: var(--bs-table-hover-color) !important;
+}
